@@ -37,7 +37,7 @@ machineB <- list.files(pattern = ".csv", recursive = TRUE, full.names = "TRUE") 
 
 Import password-protected .xlsx files from Machine C.
 
-** Unable to prompt user for password in .rmd file; prompt only works in script mode. Password is hardcoded in currently
+** Unable to prompt user for password in .rmd file; prompt only works in script mode. Password is hardcoded in currently. Note that the worksheet is not locked. In the real version, the worksheet is also locked
 ```{r}
 machineC <- xl.read.file(".\\Working/Machine C/Machine C Method09202021.xlsx", top.left.cell = "C34", password = "CS510")
 
